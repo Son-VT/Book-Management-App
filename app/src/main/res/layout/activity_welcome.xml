@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rlWelcome"
+            android:layout_width="540dp"
+            android:layout_height="545dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="-49dp"
+            android:background="@drawable/backround">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="55.25dp"
+                android:background="@drawable/logofpoly" />
+
+            <TextView
+                android:id="@+id/txtWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="145dp"
+                android:text="Welcome"
+                android:textColor="@color/white"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtNice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtWelcome"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="198dp"
+                android:text="Nice to see you again!"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNice"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="34dp"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/btnlogin"
+                android:stateListAnimator="@null"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtYouare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="19dp"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="20dp"
+            android:text="You are not a member?" />
+        <TextView
+            android:id="@+id/txtSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="235dp"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:text="Sign up" />
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÊM HÓA ĐƠN CHI TIẾT"
+        android:textSize="20sp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/txtAddTenHDCT"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Tên HDCT"
+            />
+        <TextView
+            android:id="@+id/txtMhd"
+            android:layout_below="@id/txtAddTenHDCT"
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:padding="5dp"
+            android:layout_height="30dp"
+            android:text="Tên HD  "
+            />
+        <Spinner
+            android:id="@+id/spAddMaHD"
+            android:layout_below="@id/txtAddTenHDCT"
+            android:layout_toRightOf="@+id/txtMhd"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="30dp"
+            />
+        <TextView
+            android:id="@+id/txtMs"
+            android:layout_below="@id/txtMhd"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:textSize="18dp"
+           android:text="Mã sách"
+            android:layout_height="30dp"
+            />
+        <Spinner
+            android:id="@+id/spAddMaSach"
+            android:layout_toRightOf="@id/txtMs"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/spAddMaHD"
+            />
+        <EditText
+            android:id="@+id/txtAddSoLuong"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Số lượng mua"
+            android:layout_below="@+id/txtMs"
+            android:inputType="number"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <Button
+            android:id="@+id/btnThemHDCT"
+            android:text="Thêm mới"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/btnNhapLai"
+            android:text="Nhập lại"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</LinearLayout>

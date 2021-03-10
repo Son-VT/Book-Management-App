@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÊM SÁCH"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtAddTenSach"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên sách"
+            />
+        <Spinner
+            android:id="@+id/spAddMaTheLoai"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:layout_below="@id/edtAddTenSach"
+             />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/edtAddTacGia"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tác giả"
+        />
+
+    <TextView
+        android:id="@+id/edtAddNXB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:text="Ngày xuất bản"
+        />
+    <EditText
+        android:id="@+id/edtAddGiaBia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_margin="5dp"
+        android:hint="Nhập giá"
+        android:inputType="number"
+        />
+    <EditText
+        android:id="@+id/edtAddSoLuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:inputType="number"
+        android:hint="Nhập số lượng"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+        <Button
+            android:id="@+id/btnThemSach"
+            android:text="Thêm mới"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/btnNhapLai"
+            android:text="Nhập lại"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</LinearLayout>

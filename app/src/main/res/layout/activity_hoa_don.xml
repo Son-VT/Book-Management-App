@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HoaDonActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbarhoadon"/>
+
+    <EditText
+        android:layout_below="@id/toolbar"
+        android:id="@+id/edtsearch"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:textColorHint="#2196F3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên loại sách cần tìm kiếm" />
+
+
+    <ListView
+        android:id="@+id/listHoaDon"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edtsearch"
+         />
+    <RelativeLayout
+        android:layout_width="416dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/listHoaDon"
+        android:layout_marginTop="-40dp"
+        android:background="#F57F20" >
+        <Button
+            android:id="@+id/btnAddHoaDon"
+            android:stateListAnimator="@null"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_add_circle_outline_black_24dp"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NguoiDungActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbaruser"/>
+
+
+
+    <ListView
+        android:id="@+id/listNguoiDung"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        tools:listitem="@layout/nguoidung_one_item" />
+    <RelativeLayout
+        android:layout_width="416dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/listNguoiDung"
+        android:layout_marginTop="-40dp"
+        android:background="#F57F20" >
+        <Button
+            android:id="@+id/btnAddNguoiDung"
+            android:stateListAnimator="@null"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ic_add_circle_outline_black_24dp"/>
+    </RelativeLayout>
+</RelativeLayout>
